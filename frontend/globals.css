@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(52, 31, 16);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.rect {
+    background-color: bisque;
+    height: 10px;
+}
+
+.rect1 {
+    background-color: rgb(196, 255, 228);
+    height: 10px;
+    width: 50%;
+}
+
+.rect2 {
+    background-color: rgb(204, 196, 255);
+    height: 10px;
+    width: 65%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#arrayForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+#arrayForm input{
+    width: 95%;
+    background-color: rgb(247, 255, 172);    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#arrayForm button{
+    width: 75%;
+    height: 3.5rem;
+    border-radius: 25px;
+    background-color: rgb(109, 252, 123);  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    letter-spacing: .04rem;
+}
