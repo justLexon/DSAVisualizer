@@ -10,23 +10,11 @@ body {
 }
 
 .rect {
-    background-color: bisque;
+    background-color: rgb(24, 201, 59);
     height: 10px;
 }
 
-.rect1 {
-    background-color: rgb(196, 255, 228);
-    height: 10px;
-    width: 50%;
-}
-
-.rect2 {
-    background-color: rgb(204, 196, 255);
-    height: 10px;
-    width: 65%;
-}
-
-.center {
+.centerInput {
     display: flex;
     justify-content: center;
 }
@@ -41,6 +29,7 @@ body {
 
 #arrayForm input{
     width: 95%;
+    height: 25px;
     background-color: rgb(247, 255, 172);    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -49,7 +38,9 @@ body {
     width: 75%;
     height: 3.5rem;
     border-radius: 25px;
-    background-color: rgb(109, 252, 123);  
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    background-color: rgb(2, 130, 32);  
+    border-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke; 
     letter-spacing: .04rem;
 }
