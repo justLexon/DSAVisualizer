@@ -16,7 +16,7 @@ mvn spring-boot:run
 GOAL: Visualize data structures and algorithms.
 
 Overview
--User inputs 5 numbers(affects length of bars). 
+-User inputs up to 12 numbers(affects length of bars). 
 -Click submit to show bars corresponding to those numbers.
 -Click sort to see bars get sorted in realtime. 
 -Submit button: displays unordered bars then sends (aka POST) numbers to the backend.
@@ -25,5 +25,9 @@ Overview
 
 Current Algorithms:
 -Selection Sort.
+
+Future Updates:
 -To be added: Insertion, Bubble Sort.
+-Scalable Number Inputs + Randomizer.
+-More colors for bars.
 

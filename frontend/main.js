@@ -72,5 +72,5 @@ function renderArrayFromSteps(steps) {
         });
 
         i++;
-    }, 500); // 500ms per step
+    }, 300); // 500ms per step
 }
