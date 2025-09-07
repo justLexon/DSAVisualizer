@@ -13,9 +13,9 @@ body {
 
 #rectsCont {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 1px solid azure;
-    gap: 0.5rem;
+    gap: 0.1rem;
     height: 200px;
     width: 90%;
     max-width: 250px;
@@ -33,34 +33,26 @@ body {
 
 .centerInput {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 #arrayForm {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    column-count: 2;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin-bottom: 20px;
 }
 
 #arrayForm input {
-    width: 95%;
+    width: 100%;
     height: 25px;
     background-color: rgb(247, 255, 172);    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#submitButton {
-    width: 75%;
-    height: 3.5rem;
-    border-radius: 25px;
-    background-color: rgb(2, 164, 40);  
-    border-color: rgba(245, 245, 245, 0.174);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke; 
-    letter-spacing: .04rem;
-    margin-top: 10px;
 }
 
 #form {

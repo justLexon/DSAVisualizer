@@ -1,6 +1,6 @@
 let sortedSteps = [];
 
-document.getElementById("arrayForm").addEventListener("submit", async function(e) {
+document.getElementById("submitButton").addEventListener("click", async function(e) {
     e.preventDefault(); // Stop page reloading
 
     // Get user inputs
@@ -52,7 +52,7 @@ document.getElementById("randomButton").addEventListener("click", async function
     });
 
     sortedSteps = await response.json();
-    
+
     renderArray(arr);
 });
 
@@ -94,5 +94,5 @@ function renderArrayFromSteps(steps) {
         });
 
         i++;
-    }, 300); // 500ms per step
+    }, 100); // 500ms per step
 }
