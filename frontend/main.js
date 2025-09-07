@@ -1,3 +1,5 @@
+let sortedSteps = [];
+
 document.getElementById("arrayForm").addEventListener("submit", async function(e) {
     e.preventDefault(); // Stop page reloading
 
@@ -19,15 +21,17 @@ document.getElementById("arrayForm").addEventListener("submit", async function(e
         body: JSON.stringify({array: values})
     });
 
-    const sortedSteps = await response.json();
-    console.log(sortedSteps)
+    sortedSteps = await response.json();
 
-    renderArrayFromSteps(sortedSteps);
+    renderArray(values);
 });
 
 
+document.getElementById("sortButton").addEventListener("click", function(e) {
+    e.preventDefault();
 
-
+    renderArrayFromSteps(sortedSteps);
+});
 
 
 // For json steps length repeat renderArray
