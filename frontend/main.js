@@ -44,7 +44,7 @@ function renderArray(arr) {
     arr.forEach(num => {
         const bar = document.createElement("div");
         bar.classList.add("rect");
-        bar.style.width = (num / maxVal) * 100 + "%";
+        bar.style.height = (num / maxVal) * 100 + "%";
         container.appendChild(bar);
     });
 }
@@ -67,7 +67,7 @@ function renderArrayFromSteps(steps) {
         arr.forEach(num => {
             const bar = document.createElement("div");
             bar.classList.add("rect");
-            bar.style.width = (num / maxVal) * 100 + "%";
+            bar.style.height = (num / maxVal) * 100 + "%";
             container.appendChild(bar);
         });
 

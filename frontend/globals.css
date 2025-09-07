@@ -5,7 +5,7 @@ body {
 
 .title {
     color: whitesmoke;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -13,8 +13,15 @@ body {
 
 #rectsCont {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    border: 1px solid azure;
     gap: 0.5rem;
+    height: 200px;
+    width: 90%;
+    max-width: 250px;
+    margin: 0 auto;
+    transform: scale(1, -1); 
+    /* Vertical Flip */
 }
 
 .rect {
