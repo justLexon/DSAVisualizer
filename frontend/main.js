@@ -19,10 +19,12 @@ function renderArray(arr) {
     const container = document.getElementById("rectsCont");
     container.innerHTML = "";
 
+    const maxVal = Math.max(...arr);
+
     arr.forEach(num => {
         const bar = document.createElement("div");
         bar.classList.add("rect");
-        bar.style.width = num * 10 + "px"; // dynamic
+        bar.style.width = (num / maxVal) * 100 + "%";
         container.appendChild(bar);
     });
 }

@@ -9,7 +9,14 @@ body {
     text-align: center;
 }
 
+#rectsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .rect {
+    display: flex;
     background-color: rgb(24, 201, 59);
     height: 10px;
 }
