@@ -34,7 +34,29 @@ document.getElementById("sortButton").addEventListener("click", function(e) {
 });
 
 
-// For json steps length repeat renderArray
+document.getElementById("randomButton").addEventListener("click", async function(e) {
+    e.preventDefault();
+
+    const arr = [];
+
+    for (let i = 0; i < 12; i++) {
+        let randVal = Math.floor(Math.random() * (99) + 1);
+        arr[i] = randVal;
+    }
+
+    // Send to backend
+    const response = await fetch("http://localhost:8080/api/sort", {
+        method: "POST",
+        headers: { "Content-Type" : "application/json"},
+        body: JSON.stringify({array: arr})
+    });
+
+    sortedSteps = await response.json();
+    
+    renderArray(arr);
+});
+
+
 function renderArray(arr) {
     const container = document.getElementById("rectsCont");
     container.innerHTML = "";
